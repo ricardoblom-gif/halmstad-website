@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact - Halmstad</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav>
+    <a class="logo" href="index.html">Halmstad</a>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="vrienden.html">Vrienden</a></li>
+      <li><a href="over.html">Over ons</a></li>
+      <li><a class="actief" href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <header class="hero">
+    <h1>Contact</h1>
+    <p>Heb je een vraag? Neem gerust contact op.</p>
+  </header>
+
+  <main>
+    <section>
+      <h2>Stuur een bericht</h2>
+      <form id="contact-formulier">
+        <div>
+          <label for="naam">Naam</label>
+          <input type="text" id="naam" name="naam" required>
+        </div>
+        <div>
+          <label for="email">E-mailadres</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+        <div>
+          <label for="bericht">Bericht</label>
+          <textarea id="bericht" name="bericht" rows="5" required></textarea>
+        </div>
+        <button type="submit">Versturen</button>
+      </form>
+      <p id="formulier-resultaat"></p>
+    </section>
+
+    <section>
+      <h2>Gegevens</h2>
+      <p>E-mail: info@halmstad.nl<br>Website: halmstad.nl</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 halmstad.nl</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

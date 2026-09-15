@@ -1,0 +1,7 @@
+﻿Zet hier je foto's per jaar en per uitje, bijvoorbeeld:
+
+fotos/2026/mannenweekend-texel/foto1.jpg
+fotos/2026/mannenweekend-texel/foto2.jpg
+
+Verwijs er dan in vrienden.html naar met:
+<img src="fotos/2026/mannenweekend-texel/foto1.jpg" alt="Mannenweekend Texel 2026">
