@@ -30,7 +30,7 @@
           <label for="speler-naam">Jouw naam</label>
           <input type="text" id="speler-naam" maxlength="20" placeholder="Bijv. Ricardo">
           <button id="start-knop">Start spel</button>
-          <p class="uitleg-klein">Besturing: pijltjes links/rechts (of A/D) voor de flippers</p>
+          <p class="uitleg-klein">Besturing: pijltjes links/rechts (of A/D) voor de flippers. Houd Spatie ingedrukt om de plunger te laden, laat los om te lanceren.</p>
         </div>
 
         <div id="spel-scherm" class="spel-scherm" hidden>
@@ -39,7 +39,7 @@
             <span>Ballen: <strong id="huidige-ballen">3</strong></span>
             <span>Score: <strong id="huidige-score">0</strong></span>
           </div>
-          <canvas id="canvas" width="360" height="560"></canvas>
+          <canvas id="canvas" width="400" height="600"></canvas>
           <div id="game-over" class="game-over" hidden>
             <p>Game over! Score: <strong id="eind-score">0</strong></p>
             <button id="opnieuw-knop">Opnieuw spelen</button>
