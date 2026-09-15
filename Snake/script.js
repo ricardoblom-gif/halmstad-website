@@ -306,4 +306,17 @@ document.addEventListener('keydown', (event) => {
   }
 });
 
+function toonPreview() {
+  snake = [
+    { x: 10, y: 10 },
+    { x: 9, y: 10 },
+    { x: 8, y: 10 },
+  ];
+  richting = { x: 1, y: 0 };
+  volgendeRichting = { x: 1, y: 0 };
+  zetNieuwEten();
+  tekenSpel();
+}
+
 toonScorebord();
+toonPreview();

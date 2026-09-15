@@ -774,4 +774,10 @@ function verwerkToetsUp(event) {
 document.addEventListener('keydown', verwerkToetsDown);
 document.addEventListener('keyup', verwerkToetsUp);
 
+function toonPreview() {
+  nieuweBal();
+  tekenSpel();
+}
+
 toonScorebord();
+toonPreview();
