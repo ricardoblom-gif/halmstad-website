@@ -58,10 +58,25 @@ nav a.actief {
 
 /* Grote banner met logo op de homepage */
 header.banner {
-  background: linear-gradient(135deg, var(--kleur-hoofd), var(--kleur-hoofd-donker));
+  background-image: linear-gradient(135deg, rgba(11, 110, 110, 0.55), rgba(9, 86, 86, 0.65)), url("images/texel-banner.jpg");
+  background-size: cover;
+  background-position: center 30%;
   color: white;
   padding: 5rem 1.5rem;
   text-align: center;
+  position: relative;
+}
+
+header.banner .foto-credit {
+  position: absolute;
+  right: 0.75rem;
+  bottom: 0.4rem;
+  font-size: 0.7rem;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+header.banner .foto-credit a {
+  color: inherit;
 }
 
 .logo-groot {
