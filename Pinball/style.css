@@ -1,0 +1,102 @@
+.snake-layout {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.snake-spel {
+  background: var(--kleur-kaart);
+  border-radius: 8px;
+  padding: 1.5rem;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
+}
+
+.naam-scherm {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  width: 360px;
+  max-width: 100%;
+}
+
+.naam-scherm[hidden],
+.spel-scherm[hidden] {
+  display: none;
+}
+
+.naam-scherm input {
+  padding: 0.6rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+}
+
+.uitleg-klein {
+  color: var(--kleur-tekst-licht);
+  font-size: 0.85rem;
+  margin: 0;
+}
+
+.scorebalk {
+  display: flex;
+  justify-content: space-between;
+  gap: 0.75rem;
+  margin-bottom: 0.75rem;
+  font-size: 0.95rem;
+  flex-wrap: wrap;
+}
+
+#canvas {
+  background: #101420;
+  border-radius: 6px;
+  display: block;
+  max-width: 100%;
+}
+
+.game-over {
+  margin-top: 1rem;
+  text-align: center;
+}
+
+.scorebord {
+  background: var(--kleur-kaart);
+  border-radius: 8px;
+  padding: 1.5rem;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
+  width: 260px;
+  max-width: 100%;
+}
+
+.scorebord h2 {
+  margin-top: 0;
+  color: var(--kleur-hoofd-donker);
+}
+
+#scorelijst {
+  padding-left: 1.25rem;
+  margin: 0.75rem 0 0 0;
+}
+
+#scorelijst li {
+  padding: 0.25rem 0;
+  border-bottom: 1px solid #eee;
+  display: flex;
+  justify-content: space-between;
+  gap: 0.5rem;
+}
+
+#scorelijst li:last-child {
+  border-bottom: none;
+}
+
+@media (max-width: 700px) {
+  .snake-layout {
+    flex-direction: column;
+    align-items: center;
+  }
+  .scorebord {
+    width: 360px;
+  }
+}

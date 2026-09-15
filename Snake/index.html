@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Snake - Halmstad</title>
+  <link rel="stylesheet" href="../style.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav>
+    <a class="logo" href="../index.html">Halmstad</a>
+    <ul>
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="../vrienden.html">Vrienden</a></li>
+      <li><a class="actief" href="../Snake/index.html">Snake</a></li>
+      <li><a href="../Pinball/index.html">Pinball</a></li>
+      <li><a href="../over.html">Over ons</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <header class="hero">
+    <h1>Snake</h1>
+    <p>Vul je naam in en probeer de hoogste score te halen.</p>
+  </header>
+
+  <main>
+    <div class="snake-layout">
+      <div class="snake-spel">
+        <div id="naam-scherm" class="naam-scherm">
+          <label for="speler-naam">Jouw naam</label>
+          <input type="text" id="speler-naam" maxlength="20" placeholder="Bijv. Ricardo">
+          <button id="start-knop">Start spel</button>
+          <p class="uitleg-klein">Besturing: pijltjestoetsen of WASD</p>
+        </div>
+
+        <div id="spel-scherm" class="spel-scherm" hidden>
+          <div class="scorebalk">
+            <span>Speler: <strong id="huidige-naam"></strong></span>
+            <span>Score: <strong id="huidige-score">0</strong></span>
+          </div>
+          <canvas id="canvas" width="400" height="400"></canvas>
+          <div id="game-over" class="game-over" hidden>
+            <p>Game over! Score: <strong id="eind-score">0</strong></p>
+            <button id="opnieuw-knop">Opnieuw spelen</button>
+          </div>
+        </div>
+      </div>
+
+      <aside class="scorebord">
+        <h2>Top 15</h2>
+        <p class="uitleg-klein">Deze lijst wordt bijgehouden op dit apparaat/deze browser.</p>
+        <ol id="scorelijst"></ol>
+      </aside>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 halmstad.nl</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
